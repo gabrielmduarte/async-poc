@@ -11,7 +11,7 @@ import org.springframework.stereotype.Service;
 public class TransactionProducer {
 
     @Value("${topic.name.producer}")
-    private final String topicName;
+    private String topicName;
 
     private final KafkaTemplate<String, Transaction> kafkaTemplate;
 
