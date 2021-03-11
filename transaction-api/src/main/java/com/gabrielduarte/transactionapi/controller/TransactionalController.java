@@ -1,6 +1,6 @@
 package com.gabrielduarte.transactionapi.controller;
 
-import com.gabrielduarte.transactionapi.domain.Transaction;
+import com.gabrielduarte.transactionapi.request.TransactionRequest;
 import com.gabrielduarte.transactionapi.service.TransactionService;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
@@ -13,12 +13,13 @@ public class TransactionalController {
 
     private final TransactionService service;
 
-    public TransactionalController(TransactionService service) {
+    public TransactionalController(final TransactionService service) {
         this.service = service;
     }
 
     @PostMapping
-    public void createTransaction(@RequestBody Transaction transaction) {
-        service.createTransaction();
+    public void createTransaction(@RequestBody final TransactionRequest transaction) {
+        service.createTransaction(transaction);
     }
+
 }
