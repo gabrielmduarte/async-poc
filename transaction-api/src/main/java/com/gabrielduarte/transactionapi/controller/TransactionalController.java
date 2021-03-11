@@ -1,7 +1,9 @@
 package com.gabrielduarte.transactionapi.controller;
 
 import com.gabrielduarte.transactionapi.request.TransactionRequest;
+import com.gabrielduarte.transactionapi.service.TransactionProducer;
 import com.gabrielduarte.transactionapi.service.TransactionService;
+import lombok.AllArgsConstructor;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -9,13 +11,10 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 @RequestMapping("/transactions")
+@AllArgsConstructor
 public class TransactionalController {
 
     private final TransactionService service;
-
-    public TransactionalController(final TransactionService service) {
-        this.service = service;
-    }
 
     @PostMapping
     public void createTransaction(@RequestBody final TransactionRequest transaction) {
