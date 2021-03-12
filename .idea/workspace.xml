@@ -6,14 +6,13 @@
   <component name="ChangeListManager">
     <list default="true" id="efaff5ca-3c9e-44ad-bade-5dda3f0d9e05" name="Default Changelist" comment="fix final in topic name">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/transaction-api/.gradle/6.7/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/transaction-api/.gradle/6.7/executionHistory/executionHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/transaction-api/.gradle/6.7/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/transaction-api/.gradle/6.7/executionHistory/executionHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/transaction-api/.gradle/6.7/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/transaction-api/.gradle/6.7/fileHashes/fileHashes.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/transaction-api/.gradle/6.7/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/transaction-api/.gradle/6.7/fileHashes/fileHashes.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/transaction-api/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/transaction-api/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/transaction-api/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/transaction-api/docker-compose.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/transaction-api/src/main/java/com/gabrielduarte/transactionapi/TransactionApiApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/transaction-api/src/main/java/com/gabrielduarte/transactionapi/TransactionApiApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/transaction-api/src/main/java/com/gabrielduarte/transactionapi/controller/TransactionalController.java" beforeDir="false" afterPath="$PROJECT_DIR$/transaction-api/src/main/java/com/gabrielduarte/transactionapi/controller/TransactionalController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/transaction-api/src/main/java/com/gabrielduarte/transactionapi/service/TransactionProducer.java" beforeDir="false" afterPath="$PROJECT_DIR$/transaction-api/src/main/java/com/gabrielduarte/transactionapi/service/TransactionProducer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/transaction-api/src/main/java/com/gabrielduarte/transactionapi/service/TransactionService.java" beforeDir="false" afterPath="$PROJECT_DIR$/transaction-api/src/main/java/com/gabrielduarte/transactionapi/service/TransactionService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/transaction-api/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/transaction-api/src/main/resources/application.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

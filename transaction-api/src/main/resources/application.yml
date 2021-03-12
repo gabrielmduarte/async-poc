@@ -14,10 +14,9 @@ spring:
 
   kafka:
     producer:
-      bootstrap-servers: 127.0.0.1:9092
+      bootstrap-servers: localhost:9092
       key-serializer: org.apache.kafka.common.serialization.StringSerializer
-      value-serializer: org.apache.kafka.common.serialization.StringSerializer
-      group-id: group_id
+      value-serializer: org.springframework.kafka.support.serializer.JsonSerializer
 
 topic:
   name:
