@@ -21,8 +21,3 @@ spring:
 topic:
   name:
     producer: transaction.done
-
-auto:
-  create:
-    topics:
-      enable: true

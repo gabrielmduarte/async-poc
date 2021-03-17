@@ -1,7 +1,6 @@
 package com.gabrielduarte.transactionapi.controller;
 
 import com.gabrielduarte.transactionapi.request.TransactionRequest;
-import com.gabrielduarte.transactionapi.service.TransactionProducer;
 import com.gabrielduarte.transactionapi.service.TransactionService;
 import lombok.AllArgsConstructor;
 import org.springframework.web.bind.annotation.PostMapping;
