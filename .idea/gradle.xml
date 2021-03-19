@@ -5,10 +5,28 @@
     <option name="linkedExternalProjectsSettings">
       <GradleProjectSettings>
         <option name="distributionType" value="DEFAULT_WRAPPED" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/order-api" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$/order-api" />
+          </set>
+        </option>
+      </GradleProjectSettings>
+      <GradleProjectSettings>
+        <option name="distributionType" value="DEFAULT_WRAPPED" />
         <option name="externalProjectPath" value="$PROJECT_DIR$/transaction-api" />
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$/transaction-api" />
+          </set>
+        </option>
+      </GradleProjectSettings>
+      <GradleProjectSettings>
+        <option name="distributionType" value="DEFAULT_WRAPPED" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/transaction-sync" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$/transaction-sync" />
           </set>
         </option>
       </GradleProjectSettings>
