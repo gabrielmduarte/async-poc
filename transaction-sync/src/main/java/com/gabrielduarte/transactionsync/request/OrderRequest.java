@@ -1,6 +1,6 @@
-package com.gabrielduarte.request;
+package com.gabrielduarte.transactionsync.request;
 
-import com.gabrielduarte.domain.Status;
+import com.gabrielduarte.transactionsync.domain.Status;
 import lombok.Data;
 
 import java.math.BigDecimal;
@@ -16,4 +16,5 @@ public class OrderRequest {
     private Long swapiUserId;
 
     private List<ProductRequest> products;
+
 }

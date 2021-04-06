@@ -14,10 +14,21 @@ spring:
 
   kafka:
     producer:
-      bootstrap-servers: localhost:9092
+      properties:
+        spring:
+          json:
+            add:
+              type:
+                headers: false
+      bootstrap-servers: 0.0.0.0:9092
       key-serializer: org.apache.kafka.common.serialization.StringSerializer
       value-serializer: org.springframework.kafka.support.serializer.JsonSerializer
 
 topic:
   name:
     producer: transaction.done
+
+auto:
+  create:
+    topics:
+      enable: true

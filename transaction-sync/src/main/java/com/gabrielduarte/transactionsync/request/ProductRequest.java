@@ -1,4 +1,4 @@
-package com.gabrielduarte.request;
+package com.gabrielduarte.transactionsync.request;
 
 import lombok.Data;
 
