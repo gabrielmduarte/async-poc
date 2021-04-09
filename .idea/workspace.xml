@@ -4,35 +4,37 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="efaff5ca-3c9e-44ad-bade-5dda3f0d9e05" name="Default Changelist" comment="new apps">
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/transaction-sync/build/generated/sources/annotationProcessor/java/main/com/gabrielduarte/transactionsync/mapper/OrderMapperImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/transaction-sync/build/generated/sources/annotationProcessor/java/main/com/gabrielduarte/transactionsync/mapper/ProductMapperImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/transaction-sync/src/main/java/com/gabrielduarte/transactionsync/mapper/OrderMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/transaction-sync/src/main/java/com/gabrielduarte/transactionsync/mapper/ProductMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/transaction-sync/src/main/java/com/gabrielduarte/transactionsync/request/OrderRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/transaction-sync/src/main/java/com/gabrielduarte/transactionsync/request/ProductRequest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+    <list default="true" id="efaff5ca-3c9e-44ad-bade-5dda3f0d9e05" name="Default Changelist" comment="changes done, app working">
+      <change afterPath="$PROJECT_DIR$/transaction-api/src/main/java/com/gabrielduarte/transactionapi/domain/event/ProductEvent.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/transaction-api/src/main/java/com/gabrielduarte/transactionapi/domain/event/TransactionEvent.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/order-api/src/main/java/com/gabrielduarte/controller/OrderController.java" beforeDir="false" afterPath="$PROJECT_DIR$/order-api/src/main/java/com/gabrielduarte/controller/OrderController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/order-api/src/main/java/com/gabrielduarte/request/OrderRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/order-api/src/main/java/com/gabrielduarte/request/OrderRequest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/order-api/src/main/java/com/gabrielduarte/request/ProductRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/order-api/src/main/java/com/gabrielduarte/request/ProductRequest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/transaction-api/.gradle/6.7/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/transaction-api/.gradle/6.7/executionHistory/executionHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/transaction-api/.gradle/6.7/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/transaction-api/.gradle/6.7/executionHistory/executionHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/transaction-api/.gradle/6.7/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/transaction-api/.gradle/6.7/fileHashes/fileHashes.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/transaction-api/.gradle/6.7/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/transaction-api/.gradle/6.7/fileHashes/fileHashes.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/transaction-api/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/transaction-api/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/transaction-api/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/transaction-api/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/transaction-api/src/main/java/com/gabrielduarte/transactionapi/service/TransactionProducer.java" beforeDir="false" afterPath="$PROJECT_DIR$/transaction-api/src/main/java/com/gabrielduarte/transactionapi/service/TransactionProducer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/transaction-api/src/main/java/com/gabrielduarte/transactionapi/controller/TransactionalController.java" beforeDir="false" afterPath="$PROJECT_DIR$/transaction-api/src/main/java/com/gabrielduarte/transactionapi/controller/TransactionalController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/transaction-api/src/main/java/com/gabrielduarte/transactionapi/domain/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/transaction-api/src/main/java/com/gabrielduarte/transactionapi/domain/ProductEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/transaction-api/src/main/java/com/gabrielduarte/transactionapi/domain/Transaction.java" beforeDir="false" afterPath="$PROJECT_DIR$/transaction-api/src/main/java/com/gabrielduarte/transactionapi/domain/TransactionEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/transaction-api/src/main/java/com/gabrielduarte/transactionapi/kafka/TransactionProducer.java" beforeDir="false" afterPath="$PROJECT_DIR$/transaction-api/src/main/java/com/gabrielduarte/transactionapi/producer/TransactionDoneProducer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/transaction-api/src/main/java/com/gabrielduarte/transactionapi/mapper/ProductMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/transaction-api/src/main/java/com/gabrielduarte/transactionapi/mapper/ProductMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/transaction-api/src/main/java/com/gabrielduarte/transactionapi/mapper/TransactionMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/transaction-api/src/main/java/com/gabrielduarte/transactionapi/mapper/TransactionMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/transaction-api/src/main/java/com/gabrielduarte/transactionapi/repository/TransactionRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/transaction-api/src/main/java/com/gabrielduarte/transactionapi/repository/TransactionRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/transaction-api/src/main/java/com/gabrielduarte/transactionapi/request/ProductRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/transaction-api/src/main/java/com/gabrielduarte/transactionapi/domain/request/ProductRequest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/transaction-api/src/main/java/com/gabrielduarte/transactionapi/request/TransactionRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/transaction-api/src/main/java/com/gabrielduarte/transactionapi/domain/request/TransactionRequest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/transaction-api/src/main/java/com/gabrielduarte/transactionapi/service/TransactionService.java" beforeDir="false" afterPath="$PROJECT_DIR$/transaction-api/src/main/java/com/gabrielduarte/transactionapi/service/TransactionService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/transaction-api/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/transaction-api/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/transaction-sync/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/transaction-sync/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/transaction-sync/build/generated/sources/annotationProcessor/java/main/com/gabrielduarte/transactionsync/mapper/OrderMapperImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/transaction-sync/build/generated/sources/annotationProcessor/java/main/com/gabrielduarte/transactionsync/mapper/OrderMapperImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/transaction-sync/build/generated/sources/annotationProcessor/java/main/com/gabrielduarte/transactionsync/mapper/ProductMapperImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/transaction-sync/build/generated/sources/annotationProcessor/java/main/com/gabrielduarte/transactionsync/mapper/ProductMapperImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/transaction-sync/src/main/java/com/gabrielduarte/transactionsync/client/OrderClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/transaction-sync/src/main/java/com/gabrielduarte/transactionsync/client/OrderClient.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/transaction-sync/src/main/java/com/gabrielduarte/transactionsync/kafka/TransactionTransporter.java" beforeDir="false" afterPath="$PROJECT_DIR$/transaction-sync/src/main/java/com/gabrielduarte/transactionsync/kafka/TransactionTransporter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/transaction-sync/src/main/java/com/gabrielduarte/transactionsync/rabbit/RabbitConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/transaction-sync/src/main/java/com/gabrielduarte/transactionsync/rabbit/RabbitConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/transaction-sync/src/main/java/com/gabrielduarte/transactionsync/rabbit/TransactionListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/transaction-sync/src/main/java/com/gabrielduarte/transactionsync/rabbit/TransactionListener.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/transaction-sync/src/main/java/com/gabrielduarte/transactionsync/rabbit/TransactionProducer.java" beforeDir="false" afterPath="$PROJECT_DIR$/transaction-sync/src/main/java/com/gabrielduarte/transactionsync/rabbit/TransactionProducer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/transaction-sync/src/main/java/com/gabrielduarte/transactionsync/domain/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/transaction-sync/src/main/java/com/gabrielduarte/transactionsync/domain/event/ProductEvent.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/transaction-sync/src/main/java/com/gabrielduarte/transactionsync/domain/Transaction.java" beforeDir="false" afterPath="$PROJECT_DIR$/transaction-sync/src/main/java/com/gabrielduarte/transactionsync/domain/event/TransactionEvent.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/transaction-sync/src/main/java/com/gabrielduarte/transactionsync/kafka/TransactionTransporter.java" beforeDir="false" afterPath="$PROJECT_DIR$/transaction-sync/src/main/java/com/gabrielduarte/transactionsync/transporter/TransactionDoneTransporter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/transaction-sync/src/main/java/com/gabrielduarte/transactionsync/mapper/OrderMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/transaction-sync/src/main/java/com/gabrielduarte/transactionsync/mapper/OrderMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/transaction-sync/src/main/java/com/gabrielduarte/transactionsync/mapper/ProductMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/transaction-sync/src/main/java/com/gabrielduarte/transactionsync/mapper/ProductMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/transaction-sync/src/main/java/com/gabrielduarte/transactionsync/rabbit/RabbitConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/transaction-sync/src/main/java/com/gabrielduarte/transactionsync/config/RabbitConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/transaction-sync/src/main/java/com/gabrielduarte/transactionsync/rabbit/TransactionListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/transaction-sync/src/main/java/com/gabrielduarte/transactionsync/consumer/SendCreateOrderRequestConsumer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/transaction-sync/src/main/java/com/gabrielduarte/transactionsync/rabbit/TransactionProducer.java" beforeDir="false" afterPath="$PROJECT_DIR$/transaction-sync/src/main/java/com/gabrielduarte/transactionsync/producer/SendCreateOrderRequestProducer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/transaction-sync/src/main/java/com/gabrielduarte/transactionsync/service/QueueListener.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/transaction-sync/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/transaction-sync/src/main/resources/application.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -115,6 +117,7 @@
       <recent name="com.gabrielduarte.transactionsync.domain" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.gabrielduarte.transactionapi.domain.event" />
       <recent name="com.gabrielduarte.transactionapi.mapper" />
     </key>
   </component>
@@ -203,7 +206,14 @@
       <option name="project" value="LOCAL" />
       <updated>1616009613747</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="changes done, app working">
+      <created>1617715838746</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1617715838746</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -222,18 +232,8 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="fix final in topic name" />
     <MESSAGE value="new apps" />
-    <option name="LAST_COMMIT_MESSAGE" value="new apps" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/transaction-sync/src/main/java/com/gabrielduarte/transactionsync/rabbit/TransactionListener.java</url>
-          <line>24</line>
-          <option name="timeStamp" value="8" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <MESSAGE value="changes done, app working" />
+    <option name="LAST_COMMIT_MESSAGE" value="changes done, app working" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

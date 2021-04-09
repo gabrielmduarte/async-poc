@@ -1,7 +1,7 @@
 package com.gabrielduarte.transactionsync.mapper;
 
-import com.gabrielduarte.transactionsync.domain.Product;
-import com.gabrielduarte.transactionsync.domain.Transaction;
+import com.gabrielduarte.transactionsync.domain.event.ProductEvent;
+import com.gabrielduarte.transactionsync.domain.event.TransactionEvent;
 import com.gabrielduarte.transactionsync.request.OrderRequest;
 import com.gabrielduarte.transactionsync.request.ProductRequest;
 import java.util.ArrayList;
@@ -22,29 +22,29 @@ public class OrderMapperImpl implements OrderMapper {
     private ProductMapper productMapper;
 
     @Override
-    public OrderRequest toOrderRequest(Transaction transaction) {
-        if ( transaction == null ) {
+    public OrderRequest toOrderRequest(TransactionEvent transactionEvent) {
+        if ( transactionEvent == null ) {
             return null;
         }
 
         OrderRequest orderRequest = new OrderRequest();
 
-        orderRequest.setValue( transaction.getValue() );
-        orderRequest.setStatus( transaction.getStatus() );
-        orderRequest.setSwapiUserId( transaction.getSwapiUserId() );
-        orderRequest.setProducts( productListToProductRequestList( transaction.getProducts() ) );
+        orderRequest.setValue( transactionEvent.getValue() );
+        orderRequest.setStatus( transactionEvent.getStatus() );
+        orderRequest.setSwapiUserId( transactionEvent.getSwapiUserId() );
+        orderRequest.setProducts( productListToProductRequestList( transactionEvent.getProductEvents() ) );
 
         return orderRequest;
     }
 
-    protected List<ProductRequest> productListToProductRequestList(List<Product> list) {
+    protected List<ProductRequest> productListToProductRequestList(List<ProductEvent> list) {
         if ( list == null ) {
             return null;
         }
 
         List<ProductRequest> list1 = new ArrayList<ProductRequest>( list.size() );
-        for ( Product product : list ) {
-            list1.add( productMapper.toProductRequest( product ) );
+        for ( ProductEvent productEvent : list ) {
+            list1.add( productMapper.toProductRequest(productEvent) );
         }
 
         return list1;

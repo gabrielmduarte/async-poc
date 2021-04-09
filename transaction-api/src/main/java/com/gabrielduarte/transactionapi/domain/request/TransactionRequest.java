@@ -1,6 +1,7 @@
-package com.gabrielduarte.transactionapi.request;
+package com.gabrielduarte.transactionapi.domain.request;
 
 import com.gabrielduarte.transactionapi.domain.Status;
+import com.gabrielduarte.transactionapi.domain.request.ProductRequest;
 import lombok.Data;
 
 import java.math.BigDecimal;

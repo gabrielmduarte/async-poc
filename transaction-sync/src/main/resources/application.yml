@@ -16,7 +16,7 @@ spring:
           json:
             value:
               default:
-                type: com.gabrielduarte.transactionsync.domain.Transaction
+                type: com.gabrielduarte.transactionsync.domain.event.Transaction
 
   rabbitmq:
     host: localhost

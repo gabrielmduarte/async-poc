@@ -8,6 +8,6 @@ import org.springframework.web.bind.annotation.PostMapping;
 public interface OrderClient {
 
     @PostMapping("/orders")
-    void sendTransaction(final OrderRequest orderRequest);
+    void create(final OrderRequest orderRequest);
 
 }

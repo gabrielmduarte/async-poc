@@ -1,4 +1,4 @@
-package com.gabrielduarte.transactionsync.rabbit;
+package com.gabrielduarte.transactionsync.config;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 import lombok.RequiredArgsConstructor;
@@ -19,27 +19,27 @@ public class RabbitConfig {
 
     @Bean
     public Exchange transactionExchange() {
-        return ExchangeBuilder.topicExchange("TRANSACTION-DONE").build();
+        return ExchangeBuilder.topicExchange("send-create-order-request-exchange").build();
     }
 
     @Bean
     public Queue transactionQueue() {
-        return QueueBuilder.durable("TRANSACTION-QUEUE")
-                            .deadLetterExchange("TRANSACTION-DONE")
-                            .deadLetterRoutingKey("TO-DLQ")
+        return QueueBuilder.durable("send-create-order-request-queue")
+                            .deadLetterExchange("send-create-order-request-exchange")
+                            .deadLetterRoutingKey("send-create-order-request-queue.dlq")
                             .build();
     }
 
     @Bean
     public Queue dlqQueue() {
-        return QueueBuilder.durable("TRANSACTION-DLQ-QUEUE").build();
+        return QueueBuilder.durable("send-create-order-request-queue.dlq").build();
     }
 
     @Bean
     public Binding createBindingKey(Queue transactionQueue, Exchange transactionExchange) {
         return BindingBuilder.bind(transactionQueue)
                                 .to(transactionExchange)
-                                .with("TO-TRANSACTION-QUEUE")
+                                .with("send-create-order-request-queue")
                                 .noargs();
     }
 
@@ -47,7 +47,7 @@ public class RabbitConfig {
     public Binding createDLQBindingKey(Queue dlqQueue, Exchange transactionExchange) {
         return BindingBuilder.bind(dlqQueue)
                 .to(transactionExchange)
-                .with("TO-DLQ")
+                .with("send-create-order-request-queue.dlq")
                 .noargs();
     }
 

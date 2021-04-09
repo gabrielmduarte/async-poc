@@ -1,7 +1,7 @@
-package com.gabrielduarte.transactionsync.rabbit;
+package com.gabrielduarte.transactionsync.consumer;
 
 import com.gabrielduarte.transactionsync.client.OrderClient;
-import com.gabrielduarte.transactionsync.domain.Transaction;
+import com.gabrielduarte.transactionsync.domain.event.TransactionEvent;
 import com.gabrielduarte.transactionsync.mapper.OrderMapper;
 import com.gabrielduarte.transactionsync.request.OrderRequest;
 import lombok.RequiredArgsConstructor;
@@ -12,19 +12,20 @@ import org.springframework.stereotype.Service;
 @Slf4j
 @Service
 @RequiredArgsConstructor
-public class TransactionListener {
+public class SendCreateOrderRequestConsumer {
 
     private final OrderClient orderClient;
 
     private final OrderMapper orderMapper;
 
-    @RabbitListener(queues = "TRANSACTION-QUEUE")
-    public void getMessageAndSendPost(Transaction transaction) {
+    @RabbitListener(queues = "send-create-order-request-queue")
+    public void consume(final TransactionEvent transactionEvent) {
         log.info("m:getMessageAndSendPost, consuming from rabbit");
-        OrderRequest orderRequest = orderMapper.toOrderRequest(transaction);
-        log.info("making request to orderApi");
-        orderClient.sendTransaction(orderRequest);
-        log.info("m:getMessageAndSendPost,  oderApi request done");
+
+        final OrderRequest orderRequest = orderMapper.toOrderRequest(transactionEvent);
+        orderClient.create(orderRequest);
+
+        log.info("m:getMessageAndSendPost,  oderApi request sent");
     }
 
 }

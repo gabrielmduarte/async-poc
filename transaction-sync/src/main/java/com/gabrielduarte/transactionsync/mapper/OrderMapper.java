@@ -1,6 +1,6 @@
 package com.gabrielduarte.transactionsync.mapper;
 
-import com.gabrielduarte.transactionsync.domain.Transaction;
+import com.gabrielduarte.transactionsync.domain.event.TransactionEvent;
 import com.gabrielduarte.transactionsync.request.OrderRequest;
 import org.mapstruct.Mapper;
 import org.mapstruct.ReportingPolicy;
@@ -10,6 +10,6 @@ import org.mapstruct.ReportingPolicy;
         uses = ProductMapper.class)
 public interface OrderMapper {
 
-    OrderRequest toOrderRequest(Transaction transaction);
+    OrderRequest toOrderRequest(TransactionEvent transactionEvent);
 
 }
