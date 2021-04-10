@@ -1,4 +1,4 @@
-package com.gabrielduarte.request;
+package com.gabrielduarte.transactionapi.domain.request;
 
 import lombok.Data;
 

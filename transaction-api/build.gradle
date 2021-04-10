@@ -27,7 +27,7 @@ dependencies {
 
     runtimeOnly 'com.h2database:h2'
 
-    compile group: 'org.springframework.kafka', name: 'spring-kafka', version: '2.6.5'
+    compile 'org.springframework.kafka:spring-kafka:2.6.5'
 
     annotationProcessor 'org.projectlombok:lombok'
     annotationProcessor 'org.mapstruct:mapstruct-processor:1.4.0.Final'

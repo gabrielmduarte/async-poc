@@ -6,9 +6,17 @@ spring:
     consumer:
       bootstrap-servers: 127.0.0.1:9092
       group-id: group_id
-      auto-offset-reset: earliest
+      auto-offset-reset: latest
       key-deserializer: org.apache.kafka.common.serialization.StringDeserializer
       value-deserializer: org.springframework.kafka.support.serializer.JsonDeserializer
+      properties:
+        spring.deserializer.key.delegate.class: org.apache.kafka.common.serialization.StringDeserializer
+        spring.deserializer.value.delegate.class: org.springframework.kafka.support.serializer.JsonDeserializer
+        spring:
+          json:
+            value:
+              default:
+                type: com.gabrielduarte.transactionsync.domain.event.Transaction
 
   rabbitmq:
     host: localhost

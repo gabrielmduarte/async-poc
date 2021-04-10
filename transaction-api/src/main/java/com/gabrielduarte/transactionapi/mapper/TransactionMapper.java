@@ -1,7 +1,8 @@
 package com.gabrielduarte.transactionapi.mapper;
 
-import com.gabrielduarte.transactionapi.domain.Transaction;
-import com.gabrielduarte.transactionapi.request.TransactionRequest;
+import com.gabrielduarte.transactionapi.domain.TransactionEntity;
+import com.gabrielduarte.transactionapi.domain.event.TransactionEvent;
+import com.gabrielduarte.transactionapi.domain.request.TransactionRequest;
 import org.mapstruct.Mapper;
 import org.mapstruct.ReportingPolicy;
 
@@ -10,6 +11,8 @@ import org.mapstruct.ReportingPolicy;
         unmappedTargetPolicy = ReportingPolicy.IGNORE)
 public interface TransactionMapper {
 
-    Transaction toEntity(final TransactionRequest request);
+    TransactionEntity toEntity(final TransactionRequest request);
+
+    TransactionEvent toEvent(final TransactionRequest request);
 
 }

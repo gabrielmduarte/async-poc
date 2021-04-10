@@ -14,7 +14,7 @@ import java.util.List;
 
 @Data
 @Entity
-public class Transaction {
+public class TransactionEntity {
 
     @Id
     @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "transaction_generator")
@@ -28,5 +28,6 @@ public class Transaction {
     private Long swapiUserId;
 
     @OneToMany(cascade = CascadeType.PERSIST)
-    private List<Product> products;
+    private List<ProductEntity> products;
+
 }
