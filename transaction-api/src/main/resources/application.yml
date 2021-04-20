@@ -12,7 +12,26 @@ spring:
       enabled: true
       path: /h2
 
+  cloud:
+    stream:
+      default:
+        consumer:
+          use-native-encoding: true
+        producer:
+          use-native-encoding: true
+      bindings:
+        transaction-done-output:
+          destination: transaction-done
+      kafka:
+        binder:
+          configuration:
+            value:
+              serializer: org.springframework.kafka.support.serializer.JsonSerializer
+            key:
+              serializer: org.apache.kafka.common.serialization.StringSerializer
+
   kafka:
+    bootstrap-servers: 0.0.0.0:9092
     producer:
       properties:
         spring:
@@ -20,13 +39,12 @@ spring:
             add:
               type:
                 headers: false
-      bootstrap-servers: 0.0.0.0:9092
-      key-serializer: org.apache.kafka.common.serialization.StringSerializer
-      value-serializer: org.springframework.kafka.support.serializer.JsonSerializer
+#      key-serializer: org.apache.kafka.common.serialization.StringSerializer
+#      value-serializer: org.springframework.kafka.support.serializer.JsonSerializer
 
 topic:
   name:
-    producer: transaction.done
+    producer: transaction.donet
 
 auto:
   create:
