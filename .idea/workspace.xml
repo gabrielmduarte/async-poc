@@ -5,37 +5,20 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="efaff5ca-3c9e-44ad-bade-5dda3f0d9e05" name="Default Changelist" comment="changes done, app working">
-      <change afterPath="$PROJECT_DIR$/transaction-api/src/main/java/com/gabrielduarte/transactionapi/domain/event/ProductEvent.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/transaction-api/src/main/java/com/gabrielduarte/transactionapi/domain/event/TransactionEvent.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/transaction-api/src/main/java/com/gabrielduarte/transactionapi/channel/TransactionDoneChannel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/transaction-api/.gradle/6.7/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/transaction-api/.gradle/6.7/executionHistory/executionHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/transaction-api/.gradle/6.7/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/transaction-api/.gradle/6.7/executionHistory/executionHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/transaction-api/.gradle/6.7/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/transaction-api/.gradle/6.7/fileHashes/fileHashes.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/transaction-api/.gradle/6.7/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/transaction-api/.gradle/6.7/fileHashes/fileHashes.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/transaction-api/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/transaction-api/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/transaction-api/src/main/java/com/gabrielduarte/transactionapi/controller/TransactionalController.java" beforeDir="false" afterPath="$PROJECT_DIR$/transaction-api/src/main/java/com/gabrielduarte/transactionapi/controller/TransactionalController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/transaction-api/src/main/java/com/gabrielduarte/transactionapi/domain/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/transaction-api/src/main/java/com/gabrielduarte/transactionapi/domain/ProductEntity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/transaction-api/src/main/java/com/gabrielduarte/transactionapi/domain/Transaction.java" beforeDir="false" afterPath="$PROJECT_DIR$/transaction-api/src/main/java/com/gabrielduarte/transactionapi/domain/TransactionEntity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/transaction-api/src/main/java/com/gabrielduarte/transactionapi/kafka/TransactionProducer.java" beforeDir="false" afterPath="$PROJECT_DIR$/transaction-api/src/main/java/com/gabrielduarte/transactionapi/producer/TransactionDoneProducer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/transaction-api/src/main/java/com/gabrielduarte/transactionapi/mapper/ProductMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/transaction-api/src/main/java/com/gabrielduarte/transactionapi/mapper/ProductMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/transaction-api/src/main/java/com/gabrielduarte/transactionapi/mapper/TransactionMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/transaction-api/src/main/java/com/gabrielduarte/transactionapi/mapper/TransactionMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/transaction-api/src/main/java/com/gabrielduarte/transactionapi/repository/TransactionRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/transaction-api/src/main/java/com/gabrielduarte/transactionapi/repository/TransactionRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/transaction-api/src/main/java/com/gabrielduarte/transactionapi/request/ProductRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/transaction-api/src/main/java/com/gabrielduarte/transactionapi/domain/request/ProductRequest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/transaction-api/src/main/java/com/gabrielduarte/transactionapi/request/TransactionRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/transaction-api/src/main/java/com/gabrielduarte/transactionapi/domain/request/TransactionRequest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/transaction-api/.gradle/checksums/checksums.lock" beforeDir="false" afterPath="$PROJECT_DIR$/transaction-api/.gradle/checksums/checksums.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/transaction-api/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/transaction-api/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/transaction-api/src/main/java/com/gabrielduarte/transactionapi/TransactionApiApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/transaction-api/src/main/java/com/gabrielduarte/transactionapi/TransactionApiApplication.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/transaction-api/src/main/java/com/gabrielduarte/transactionapi/service/TransactionService.java" beforeDir="false" afterPath="$PROJECT_DIR$/transaction-api/src/main/java/com/gabrielduarte/transactionapi/service/TransactionService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/transaction-sync/build/generated/sources/annotationProcessor/java/main/com/gabrielduarte/transactionsync/mapper/OrderMapperImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/transaction-sync/build/generated/sources/annotationProcessor/java/main/com/gabrielduarte/transactionsync/mapper/OrderMapperImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/transaction-sync/build/generated/sources/annotationProcessor/java/main/com/gabrielduarte/transactionsync/mapper/ProductMapperImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/transaction-sync/build/generated/sources/annotationProcessor/java/main/com/gabrielduarte/transactionsync/mapper/ProductMapperImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/transaction-sync/src/main/java/com/gabrielduarte/transactionsync/client/OrderClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/transaction-sync/src/main/java/com/gabrielduarte/transactionsync/client/OrderClient.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/transaction-sync/src/main/java/com/gabrielduarte/transactionsync/domain/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/transaction-sync/src/main/java/com/gabrielduarte/transactionsync/domain/event/ProductEvent.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/transaction-sync/src/main/java/com/gabrielduarte/transactionsync/domain/Transaction.java" beforeDir="false" afterPath="$PROJECT_DIR$/transaction-sync/src/main/java/com/gabrielduarte/transactionsync/domain/event/TransactionEvent.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/transaction-sync/src/main/java/com/gabrielduarte/transactionsync/kafka/TransactionTransporter.java" beforeDir="false" afterPath="$PROJECT_DIR$/transaction-sync/src/main/java/com/gabrielduarte/transactionsync/transporter/TransactionDoneTransporter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/transaction-sync/src/main/java/com/gabrielduarte/transactionsync/mapper/OrderMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/transaction-sync/src/main/java/com/gabrielduarte/transactionsync/mapper/OrderMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/transaction-sync/src/main/java/com/gabrielduarte/transactionsync/mapper/ProductMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/transaction-sync/src/main/java/com/gabrielduarte/transactionsync/mapper/ProductMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/transaction-sync/src/main/java/com/gabrielduarte/transactionsync/rabbit/RabbitConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/transaction-sync/src/main/java/com/gabrielduarte/transactionsync/config/RabbitConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/transaction-sync/src/main/java/com/gabrielduarte/transactionsync/rabbit/TransactionListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/transaction-sync/src/main/java/com/gabrielduarte/transactionsync/consumer/SendCreateOrderRequestConsumer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/transaction-sync/src/main/java/com/gabrielduarte/transactionsync/rabbit/TransactionProducer.java" beforeDir="false" afterPath="$PROJECT_DIR$/transaction-sync/src/main/java/com/gabrielduarte/transactionsync/producer/SendCreateOrderRequestProducer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/transaction-sync/src/main/java/com/gabrielduarte/transactionsync/service/QueueListener.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/transaction-sync/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/transaction-sync/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/transaction-api/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/transaction-api/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/transaction-sync/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/transaction-sync/build.gradle" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -80,6 +63,11 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="refactor" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GitSEFilterConfiguration">
@@ -103,7 +91,8 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="project.structure.last.edited" value="Facets" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="preferences.sourceCode.Java" />
@@ -121,7 +110,7 @@
       <recent name="com.gabrielduarte.transactionapi.mapper" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.OrderApiApplication">
+  <component name="RunManager" selected="Application.TransactionApiApplication">
     <configuration name="OrderApiApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.gabrielduarte.OrderApiApplication" />
       <module name="order-api.main" />
@@ -213,7 +202,14 @@
       <option name="project" value="LOCAL" />
       <updated>1617715838746</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="changes done, app working">
+      <created>1617987196059</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1617987196059</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
